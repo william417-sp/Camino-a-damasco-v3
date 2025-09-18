@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página no encontrada - Iglesia Camino a Damasco</title>
+    <meta name="description" content="La página que buscas no existe. Regresa a la página principal de la Iglesia Camino a Damasco.">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Montserrat:wght@700&display=swap" as="style">
+    <link rel="preload" href="Images/logo.png" as="image">
+    
+    <!-- Stylesheets -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style_iglesia.css">
+    
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--white-color);
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .error-content {
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .error-code {
+            font-size: clamp(4rem, 10vw, 8rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .error-title {
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        
+        .error-message {
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+        
+        .error-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn-home {
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .btn-home:hover {
+            background-color: var(--white-color);
+            color: var(--primary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-back {
+            background-color: transparent;
+            color: var(--white-color);
+            border: 2px solid var(--white-color);
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .btn-back:hover {
+            background-color: var(--white-color);
+            color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+        
+        .error-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 768px) {
+            .error-content {
+                padding: 2rem 1.5rem;
+                margin: 1rem;
+            }
+            
+            .error-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn-home,
+            .btn-back {
+                width: 100%;
+                max-width: 250px;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-page">
+        <div class="error-content">
+            <div class="error-icon">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="error-code">404</div>
+            <h1 class="error-title">Página no encontrada</h1>
+            <p class="error-message">
+                Lo sentimos, la página que buscas no existe o ha sido movida. 
+                Pero no te preocupes, puedes regresar a nuestra página principal 
+                y encontrar todo lo que necesitas sobre la Iglesia Camino a Damasco.
+            </p>
+            <div class="error-actions">
+                <a href="/" class="btn-home">
+                    <i class="fas fa-home"></i>
+                    Ir al Inicio
+                </a>
+                <a href="javascript:history.back()" class="btn-back">
+                    <i class="fas fa-arrow-left"></i>
+                    Volver Atrás
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Auto-redirect after 10 seconds
+        let countdown = 10;
+        const countdownElement = document.createElement('p');
+        countdownElement.style.marginTop = '2rem';
+        countdownElement.style.opacity = '0.7';
+        countdownElement.style.fontSize = '0.9rem';
+        document.querySelector('.error-content').appendChild(countdownElement);
+
+        const timer = setInterval(() => {
+            countdownElement.textContent = `Redirigiendo automáticamente en ${countdown} segundos...`;
+            countdown--;
+            
+            if (countdown < 0) {
+                clearInterval(timer);
+                window.location.href = '/';
+            }
+        }, 1000);
+
+        // Clear timer if user interacts with page
+        document.addEventListener('click', () => {
+            clearInterval(timer);
+            countdownElement.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
