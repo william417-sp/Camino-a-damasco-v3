@@ -1,0 +1,27 @@
+{
+  "name": "Iglesia Camino a Damasco",
+  "short_name": "Camino a Damasco",
+  "description": "Una comunidad cristiana donde puedes crecer en tu fe, servir a otros y descubrir tu propósito en Cristo.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0D47A1",
+  "theme_color": "#0D47A1",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "Images/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "Images/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["religion", "community", "lifestyle"],
+  "lang": "es",
+  "dir": "ltr"
+}
