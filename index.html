@@ -58,9 +58,12 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#footer">Contacto</a>
                             </li>
+                            <!-- TODO: Botón de Donaciones - Funcionalidad para el futuro -->
+                            <!--
                             <li class="nav-item-give">
                                 <button type="button" class="btn btn-primary donate-btn">Donación</button>
-                            </li>
+                            </li>-->
+                            
                         </ul>
                     </div>
                 </div>
@@ -166,11 +169,11 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- More stream cards will be added dynamically -->
+                        <-- More stream cards will be added dynamically -->
                     </div>
                 </div>
             </div>
-            -->
+        
 
         </div>
     </section>
@@ -186,78 +189,16 @@
             <!-- Regular Events -->
             <div class="regular-events" data-aos="fade-up">
                 <h3 class="events-subtitle">Eventos Regulares</h3>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="event-card">
-                            <div class="event-icon">
-                                <i class="fas fa-church"></i>
-                            </div>
-                            <h4>Servicio Dominical</h4>
-                            <p class="event-time">Domingos 10:00 AM - 12:00 PM</p>
-                            <p class="event-description">Servicio principal de adoración y predicación de la Palabra.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="event-card">
-                            <div class="event-icon">
-                                <i class="fas fa-pray"></i>
-                            </div>
-                            <h4>Oración e Intercesión</h4>
-                            <p class="event-time">Martes 7:30 PM - 9:00 PM</p>
-                            <p class="event-description">Tiempo dedicado a la oración y la intercesión por necesidades.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="event-card">
-                            <div class="event-icon">
-                                <i class="fas fa-book-reader"></i>
-                            </div>
-                            <h4>Discipulado</h4>
-                            <p class="event-time">Jueves 7:30 PM - 9:00 PM</p>
-                            <p class="event-description">Estudio bíblico y formación espiritual para todos.</p>
-                        </div>
-                    </div>
+                <div class="row" id="regular-events-container">
+                    <!-- Los eventos regulares se cargarán dinámicamente desde events-data.js -->
                 </div>
             </div>
 
             <!-- Special Events -->
             <div class="special-events mt-5" data-aos="fade-up">
                 <h3 class="events-subtitle">Eventos Especiales</h3>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="special-event-card">
-                            <div class="event-image">
-                                <img src="Images/youth-retreat.jpg" alt="Retiro de Jóvenes 2025 - Joven líder explicando a grupo de jóvenes">
-                                <div class="event-date">
-                                    <span class="month">OCT</span>
-                                    <span class="day">15</span>
-                                </div>
-                            </div>
-                            <div class="event-content">
-                                <h4>Retiro de Jóvenes 2025</h4>
-                                <p class="event-time"><i class="far fa-clock"></i> 8:00 AM - 5:00 PM</p>
-                                <p class="event-location"><i class="fas fa-map-marker-alt"></i> Centro de Retiros El Yunque</p>
-                                <p class="event-description">Un día especial de adoración, compañerismo y actividades para jóvenes. Únete a nosotros para una experiencia transformadora.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="special-event-card">
-                            <div class="event-image">
-                                <img src="Images/worship-concert.jpg" alt="Concierto de Adoración - Personas adorando con el nombre JESUS">
-                                <div class="event-date">
-                                    <span class="month">NOV</span>
-                                    <span class="day">20</span>
-                                </div>
-                            </div>
-                            <div class="event-content">
-                                <h4>Concierto de Adoración</h4>
-                                <p class="event-time"><i class="far fa-clock"></i> 7:00 PM - 9:00 PM</p>
-                                <p class="event-location"><i class="fas fa-map-marker-alt"></i> Iglesia Camino a Damasco</p>
-                                <p class="event-description">Una noche especial de adoración y alabanza con invitados especiales. Ven a experimentar la presencia de Dios a través de la música.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="row" id="special-events-container">
+                    <!-- Los eventos especiales se cargarán dinámicamente desde events-data.js -->
                 </div>
             </div>
         </div>
@@ -327,10 +268,13 @@
                     <i class="fas fa-envelope"></i>
                     <span>Boletín</span>
                 </a>
+                <!-- TODO: Opción de Donar - Funcionalidad para el futuro -->
+                <!--
                 <a href="#" class="connect-option">
                     <i class="fas fa-hand-holding-usd"></i>
                     <span>Donar</span>
                 </a>
+                -->
             </div>
             <div class="connect-form mt-4">
                 <h6>¿Primera vez con nosotros?</h6>
@@ -401,10 +345,6 @@
                         <div class="team-info">
                             <h5>Pastora Aixa Mojica</h5>
                             <p>Pastora Principal</p>
-                            <div class="team-social">
-                                <a href="https://www.facebook.com/aixa.mojica.7" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -416,10 +356,6 @@
                         <div class="team-info">
                             <h5>Pastor William Rosado</h5>
                             <p>Pastor Principal</p>
-                            <div class="team-social">
-                                <a href="https://www.facebook.com/william.rosado.986" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -431,10 +367,6 @@
                         <div class="team-info">
                             <h5>William A. Rosado<br>Arieris Olivo</h5>
                             <p>Líderes de Adoración</p>
-                            <div class="team-social">
-                                <a href="https://www.facebook.com/william.rosado.180" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -565,6 +497,10 @@
     
     <!-- AOS Animation Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Events Data & Manager -->
+    <script src="events-data.js"></script>
+    <script src="events-manager.js"></script>
     
     <!-- Custom JavaScript -->
     <script src="Function.js"></script>
