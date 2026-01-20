@@ -446,6 +446,8 @@ section {
     color: var(--accent-color) !important;
 }
 
+/* TODO: Botón de Donaciones - Estilos para el futuro */
+/*
 .donate-btn {
     padding: 0.5rem 1.5rem;
     border-radius: 50px;
@@ -459,6 +461,13 @@ section {
     background-color: var(--white-color);
     border-color: var(--white-color);
     color: var(--primary-color);
+}
+*/
+
+/* Ocultar botón de donaciones si aparece por alguna razón */
+.donate-btn,
+.nav-item-give {
+    display: none !important;
 }
 
 /* Responsive Header Styles */
@@ -475,10 +484,19 @@ section {
         padding: 0.5rem 0;
     }
     
+    /* TODO: Botón de Donaciones - Responsive para el futuro */
+    /*
     .donate-btn {
         margin-top: 1rem;
         width: 100%;
         text-align: center;
+    }
+    */
+    
+    /* Ocultar botón de donaciones en responsive también */
+    .donate-btn,
+    .nav-item-give {
+        display: none !important;
     }
 }
 
@@ -833,8 +851,9 @@ section {
 }
 
 .team-img img {
-    width: 280px;
-    height: 280px;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
     object-fit: cover;
     object-position: center top;
     transition: transform 0.3s ease;
@@ -902,16 +921,11 @@ section {
         margin-bottom: 1.5rem;
     }
     
-    .team-img img {
-        width: 220px;
-        height: 220px;
-    }
-    
+    .team-img img,
     .team-img-dual img {
-        width: 160px;
-        height: 160px;
+        max-width: 220px;
     }
-    
+        
     .team-info {
         padding: 1rem;
     }
@@ -938,16 +952,11 @@ section {
         margin-bottom: 1rem;
     }
     
-    .team-img img {
-        width: 200px;
-        height: 200px;
-    }
-    
+    .team-img img,
     .team-img-dual img {
-        width: 140px;
-        height: 140px;
+        max-width: 200px;
     }
-    
+        
     .team-info {
         padding: 0.8rem;
     }
